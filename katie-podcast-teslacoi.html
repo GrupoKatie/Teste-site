@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">    
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Tentativa 1</title>
+<style>
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+}
+img{
+    width: 100%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: certer;
+    justify-content: center;
+    background-color: ##f5f2f0;
+    padding: 0 1.5rem;
+}
+.blog-post{
+    width: 100%;
+    height: 55%;
+    max-width: 98rem;
+    padding: 5rem;
+    background-color: #fff;
+    box-shadow: 0 0.7rem 3rem rgb(0, 0, 0, .2);
+    display: flex;
+    align-items: center;
+    border-radius: .8rem;
+    position:absolute;
+    top:10%;
+    left:10%;
+
+}
+.blog-post__img{
+    min-width: 35rem;
+    max-width: 35rem;
+    height: 30rem;
+    transform: translateX(-8rem);
+    position: relative;
+}
+.blog-post__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: .8rem;
+}
+
+.blog-post__img::before{ 
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(12, 12, 14, .4), rgba(248, 4, 156, .5));
+    box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0, .05);
+    border-radius: .8rem;
+}
+.blog-post__date span{
+    display: block;
+    color: rgba(0, 0, 0, .5);
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: .5rem 0;
+}
+.blog-post__title{
+    font-size: 2.5rem;
+    margin: 1.2rem 0 2rem;
+    text-transform: uppercase;
+    color: #f8049c;
+}
+.blog-post__text{
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, .7);
+}
+.blog-post__cta{
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #fff;
+    background-image: linear-gradient(to right, #f8049c  0%, #1f1f24 100%);
+    border-radius: .8rem;
+    text-decoration: none;
+}
+.blog-post__cta:hover{
+    background-image: linear-gradient(to right, #1f1f24 0%, #f8049c  100%);
+}
+
+
+</style>
+</head>
+<body>
+    <div class="blog-post">
+        <div class="blog-post__img">
+            <img src="http://www.eguacast.com.br/wp-content/uploads/2020/04/s2e15-300x300.jpg" alt="">
+        </div>
+        <div class="blog-post__info">
+            <div class="blog-post__date">
+                <span>Quarta-Feira</span>
+                <span>29 de Abril de 2020</span>
+            </div>
+            <h1 class="blog-post__title">Grupo Katie participa do podcast Tesla Coil</h1>
+            <p class="blog-post__text">
+                Primeiro episodio sobre mulheres na ciência do Podcast, com a participação
+                do grupo Katie, onde foi discutido brevemente sobre cientistas que nos inspiram 
+                e sobre a importância do o apoio as mulheres no ramo cientifico.
+            </p>
+            <a href="http://www.eguacast.com.br/teslacoil/s02e15-mulheres-na-ciencia-grupo-katie.html" class="blog-post__cta">Ouça o Podcast</a>
+        </div>
+    </div>
+
+</body>
+</html> 
